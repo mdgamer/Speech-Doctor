@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Prescription"
+    android:background="@android:color/holo_blue_dark"
+    >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#ffff"
+    android:text="Prescription Add"
+    android:textSize="30dp"
+    android:gravity="center"
+    android:id="@+id/txt_pres"
+    />
+
+
+
+        <TextView
+            android:id="@+id/medicine_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="100dp"
+            android:text="Medicine Name"
+            android:textColor="#FFFF00"
+            android:textSize="30dp"
+            android:layout_below="@+id/txt_pres"
+            android:gravity="center"
+            ></TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicine Name"
+            android:textColor="#ffff"
+            android:textSize="25dp"
+            android:id="@+id/medicine_name1"
+            android:layout_below="@+id/medicine_name"
+            android:gravity="center"
+            ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/medicine_name1"
+        android:layout_margin="20dp"
+        >
+        <CheckBox android:id="@+id/morning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Morning"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            />
+        <CheckBox android:id="@+id/afternoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Afternoon"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            />
+        <CheckBox android:id="@+id/night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Night"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:elevation="10dp"
+        android:contentDescription="Saqulain"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="180dp"
+        android:layout_marginBottom="90dp"
+        android:src="@drawable/mic"
+        android:onClick="getSpeechInput"
+        >
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:text="Next"
+        android:background="@android:color/holo_green_light"
+        android:layout_margin="20dp"
+        android:id="@+id/next"
+        />
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignSend"
+    android:background="@android:color/holo_blue_dark"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prescription Details"
+        android:textColor="@android:color/white"
+        android:layout_margin="10dp"
+        android:textSize="30dp"
+        android:id="@+id/prep"
+        android:gravity="center"
+        ></TextView>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/prep"
+    android:id="@+id/details"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicine Details"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:layout_margin="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timings"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:layout_margin="20dp"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_below="@+id/details"
+        android:id="@+id/description"
+        android:layout_margin="20dp"
+        >
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="sasasasasa"
+       android:layout_margin="20dp"
+       android:id="@+id/medicine_name_pres"
+       android:textColor="@android:color/holo_red_dark"
+       ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sasasasasa"
+            android:id="@+id/medicine_time_pres"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="70dp"
+            android:textColor="@android:color/holo_red_dark"
+            ></TextView>
+    </LinearLayout>
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_margin="20dp"
+       android:background="@android:color/holo_green_light"
+       android:text="Sign and Send"
+       android:textColor="@android:color/white"
+       android:textSize="20dp"
+       android:id="@+id/sign_send"
+       ></Button>
+
+
+</RelativeLayout>
